@@ -1,13 +1,8 @@
-@media only screen and (max-width: 600px) {
 body {
     
     background-image: url('new_imagee.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100vh;
 }
 
 #top-strip {
@@ -19,7 +14,6 @@ body {
     font-family: 'Arial', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     animation: fadeIn 2s;
-    flex-shrink: 0;
 }
 
 #time-date, #visitor-counter {
@@ -47,6 +41,99 @@ h1 {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+
+
+#navigation-strip {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #1a1a1a;
+}
+
+#navigation-strip button {
+    color: #f1f1f1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#navigation-strip button:hover {
+    color: #0ac4ff;
 }
 
 
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background: #1a1a1a;
+    color: #f1f1f1;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button {
+    background: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion-button:hover {
+    background-color: #ccc;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+}
+
+
+.plus {
+    float: right;
+}
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#top-strip, #navigation-strip, .accordion {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-strip, #navigation-strip {
+        flex-shrink: 0;
+    }
+
+    .accordion {
+        overflow: auto;
+        flex-grow: 1;
+    }
+}

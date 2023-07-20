@@ -106,3 +106,23 @@ h1 {
 .plus {
     float: right;
 }
+
+/* Add this block of code at the end of your CSS file */
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    #top-strip, #navigation-strip {
+        flex-shrink: 0;
+    }
+
+    .accordion {
+        overflow: auto;
+    }
+}
+

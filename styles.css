@@ -137,3 +137,21 @@ body, html {
         flex-grow: 1;
     }
 }
+
+
+/* Add this block of code at the end of your CSS file */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .accordion-button, #navigation-strip button {
+        padding: 24px;
+        font-size: 18px;
+    }
+
+    .accordion-content {
+        padding: 0 24px;
+    }
+}

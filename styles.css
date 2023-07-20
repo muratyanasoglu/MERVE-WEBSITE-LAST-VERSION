@@ -126,6 +126,7 @@ body, html {
     body {
         display: flex;
         flex-direction: column;
+        font-size: 18px;
     }
 
     #top-strip, #navigation-strip {
@@ -135,15 +136,6 @@ body, html {
     .accordion {
         overflow: auto;
         flex-grow: 1;
-    }
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px;
     }
 
     .accordion-button, #navigation-strip button {
@@ -155,3 +147,5 @@ body, html {
         padding: 0 24px;
     }
 }
+
+

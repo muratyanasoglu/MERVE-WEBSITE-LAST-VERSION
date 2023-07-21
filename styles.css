@@ -143,6 +143,12 @@ body, html {
         font-size: 22px;
     }
 
+        .accordion-content {
+        padding: 0 30px;
+    }
+}
+
+
 }
 
 
@@ -151,7 +157,3 @@ body, html {
 
 
   
-    .accordion-content {
-        padding: 0 30px;
-    }
-}

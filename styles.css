@@ -3,6 +3,7 @@ body {
     background-image: url('new_imagee.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #top-strip {
